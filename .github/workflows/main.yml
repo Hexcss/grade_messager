@@ -15,9 +15,15 @@ jobs:
 
     - name: Go back to root directory
       run: cd ..
+
+    - name: Print current directory
+      run: pwd
     
     - name: Go to functions directory
       run: cd functions
+
+    - name: Print current directory (inside functions)
+      run: pwd
 
     - name: Install Dependencies
       run: npm ci
